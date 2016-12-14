@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Gochi+Hand|Lato:300,400');
+html { height: 100%; }
+body, .body {
+    margin: 0;
+    background-color: #1E2527;    
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 650px;
+}
+
+.container {
+    flex: 1 1 auto;
+}
+
+header {
+    background: #D51B85;
+    box-shadow: 0 2px 22px 0 rgba(0,0,0,0.75);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.header-title {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 62px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.icon-right, .icon-left {
+    margin: 20px;
+    border: none;
+    width: 43px;
+    height: 40px;
+    cursor: pointer;
+    outline: 0;
+    
+}
+
+.chat-icon {
+    background: transparent url('images/chat-icon.png') no-repeat  center center;
+    background-size: contain;
+}
+
+.chat-icon:hover {
+    background: transparent url('images/chat-icon-hover.png') no-repeat center center;
+    background-size: contain;
+}
+
+.chat-icon:active {
+    background: transparent url('images/chat-icon-active.png') no-repeat center center;
+    background-size: contain;
+}
+
+.main-icon {
+    background: transparent url('images/main-icon.png') no-repeat center center;
+    background-size: contain;
+}
+
+.main-icon:hover {
+    background: transparent url('images/main-icon-hover.png') no-repeat center center;
+    background-size: contain;
+}
+
+.main-icon:active {
+    background: transparent url('images/main-icon-active.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+.back-icon {
+    background: transparent url('images/back-icon.png') no-repeat center center;
+    background-size: contain;
+}
+
+.back-icon:hover {
+    background: transparent url('images/back-icon-hover.png') no-repeat center center;
+    background-size: contain;
+}
+
+.back-icon:active {
+    background: transparent url('images/back-icon-active.png') no-repeat center center;
+    background-size: contain;
+}
+
+.header-profile-image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 36px;
+    margin: 0 20px;
+}
+
+.main-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile {
+    background: #FFFFFF;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.81);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 340px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.profile > div:first-child {
+    flex: 1 1 auto;
+}
+.profile img {
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.profile-text {
+    position: absolute;
+    top: 0;
+    bottom: 58px;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    overflow-y: auto;
+    font-style: italic;
+}
+
+.profiles::after {
+    content: ".";
+    background: #FFFFFF;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.81);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 330px;
+    height: 20px;
+    position: relative;
+    top: -15px;
+    z-index: -200;
+    width: 330px;
+}
+
+.profiles::before {
+    content: ".";
+    background: #FFFFFF;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.81);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 330px;
+    height: 20px;
+    position: relative;
+    top: -30px;
+    z-index: -200;
+    width: 320px;
+    order: 100;
+}
+
+.identification {
+    flex: 0 0 auto;
+    margin: 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.identification-name {
+    font-size: 29px;
+    color: #1E2527;
+    letter-spacing: -0.56px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.identification-distance {
+    font-size: 15px;
+    color: #929494;
+    letter-spacing: 0;
+    padding-left: 15px;
+    background: transparent url("images/location-icon.png") no-repeat;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.button-round {
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.74);
+    cursor: pointer;
+    outline: 0;
+}
+
+.button-primary {
+    background: #D51B85;
+}
+.button-primary:hover {
+   background: #B50066;
+}
+.button-primary:active {
+   background: #940054;
+
+}
+
+.button-big {
+   height: 100px;
+   width: 100px;
+   border-radius: 50px
+}
+
+.button-small {
+   height: 60px;
+   width: 60px;
+   border-radius: 30px;
+}
+
+.button-front {
+   z-index: 5;
+   margin: 0 -3px
+}
+
+.overlay {
+    background: rgba(0,0,0,0.86);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-title {
+    font-family: 'Alex Brush', cursive;
+    font-size: 71px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.match-details {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.match-profile {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 63px;
+    border: 3px solid #FFFFFF;
+    margin: 20px;
+}
+
+.button-square {
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    width: 322px;
+    height: 66px;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 10px;
+    padding: 5px 20px;
+    text-align: left;
+    cursor: pointer;
+    outline: 0;
+}
+
+.button-secundary {
+    background: transparent;
+}
+.button-secundary:hover {
+    background-color: rgba(181,0,102,0.5);
+}
+.button-secundary:active {
+    background-color: rgba(148,0,84,0.5);
+    
+}
+
+.button-chat {
+    background: transparent url('images/chat-icon.png') no-repeat left center;
+    background-size: contain;
+    padding-left: 70px;
+}
+.button-goback {
+    background: transparent url('images/back-icon.png') no-repeat left center;
+    padding-left: 70px;
+}
+
+.chatlist-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.chatlist-item {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.chatlist-item:hover {
+    background-color: #B50066;
+}
+.chatlist-item:active {
+    background-color:#940054;
+}
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.chat-item-other-text,.chat-item-self-text {
+    padding: 10px;
+    margin: 10px;
+    font-size: 22px;
+    border-radius: 16px;
+    max-width: 400px;
+    word-wrap: break-word;
+    min-width: 100px;
+}
+
+.chat-item-self-text {
+    background: #D51B85;
+    color: #FFFFFF;
+}
+.chat-item-self::after {
+    content: ".";
+    display: block;
+    background: url("images/self-tjoep.png") no-repeat right center;
+    position: relative;
+    top: -10px;
+    right: 20px;
+}
+.chat-item-other-text {
+    background: #FFFFFF;
+    color: #2F2F2F;
+}
+.chat-item-other::after {
+    content: ".";
+    display: block;
+    background: url("images/other-tjoep.png") no-repeat left center;
+    position: relative;
+    top: -10px;
+    left: 20px;
+}
+.chat-item-self {
+    align-self: flex-end;
+}
+
+.chat-item-other {
+    align-self: flex-start;
+}
+
+
+.new-message {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    flex: 0 0 auto;
+}
+
+.new-message input {
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    flex: 1 1 auto;
+    border: none;
+    outline: 0;
+}
+.new-message button {
+    background: #D51B85;
+    border: none;
+    border-radius: 16px;
+    font-family: 'Gochi Hand';
+    font-size: 27px;
+    color: #FFFFFF;
+    padding: 5px 20px;
+}
+
+.empty-message {
+    color: white;
+    font-style: italic;
+    margin: 20px;
+}
