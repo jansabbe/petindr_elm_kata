@@ -1,3 +1,11 @@
+# What you will be making
+
+You'll be making a Tindr but with pets. You can like/dislike pets. If they like you back, you have a match and you can start chatting.
+![Main screen](/screenshots/screen1.png?raw=true)
+![Show profile](/screenshots/screen2.png?raw=true)
+![It's a match](/screenshots/screen3.png?raw=true)
+![Start chatting](/screenshots/screen4.png?raw=true)
+
 # What you need installed
 
 * [Node.js](http://nodejs.org)
@@ -63,3 +71,6 @@ Hints:
 
 Hints:
 - Use the [WebSocket](http://package.elm-lang.org/packages/elm-lang/websocket/latest) module to listen for messages and to send messages.
+
+## 6. Routing between Home and Chat
+TODO
