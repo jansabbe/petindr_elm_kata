@@ -1,6 +1,7 @@
 # What you will be making
 
 You'll be making a Tindr but with pets. You can like/dislike pets. If they like you back, you have a match and you can start chatting.
+
 ![Main screen](/screenshots/screen1.png?raw=true)
 ![Show profile](/screenshots/screen2.png?raw=true)
 ![It's a match](/screenshots/screen3.png?raw=true)
