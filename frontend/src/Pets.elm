@@ -9,11 +9,9 @@ type alias Pet =
     , photoUrl : String
     }
 
-
 nextPets : List Pet
 nextPets =
     [ babyChicken, burt, bluebell, missPoes, cricket, mrFuzz, lady, grumpy, bobby ]
-
 
 princess : Pet
 princess =
@@ -70,7 +68,7 @@ burt =
     { id = 6
     , name = "Burt"
     , photoUrl = "http://localhost:3000/profiles/dog1.jpg"
-    , text = "Burt looks cute, but is in reality a though guy. Secretly wants to work for the FBI"
+    , text = "Burt looks cute, but is in reality a tough guy. Secretly wants to work for the FBI"
     , distance = 15
     }
 

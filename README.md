@@ -60,7 +60,7 @@ Hints:
 Hints:
 - Each time the user types, you can get a message via [onInput](http://package.elm-lang.org/packages/elm-lang/html/2.0.0/Html-Events#onInput)
 - You can bind the value in the model to an HTML input via [value](http://package.elm-lang.org/packages/elm-lang/html/2.0.0/Html-Attributes#value)
-- Checkout the [List api](http://package.elm-lang.org/packages/elm-lang/core/5.0.0/List) for usefull functions dealing with a list of chat messages
+- Checkout the [List api](http://package.elm-lang.org/packages/elm-lang/core/5.0.0/List) for useful functions dealing with a list of chat messages
 
 ## 5. Connect via websockets to a backend server.
 
