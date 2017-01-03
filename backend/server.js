@@ -95,9 +95,10 @@ app.get('/api/pets', (req, res) => {
 
 app.ws('/api/chat/:id', (ws, req) => {
     let answers = _.find(pets, {id: parseInt(req.params.id)}).answers
-    setTimeout(()=> ws.send(_.sample(answers),(x)=>console.log(x)), Math.round(Math.random() * 10000))
+    setTimeout(()=> ws.send(_.sample(answers),(x)=>x?console.log(x):''), Math.round(Math.random() * 10000))
     ws.on('message', (msg) => {
-      setTimeout(()=> ws.send(_.sample(answers),(x)=>console.log(x)), Math.round(Math.random() * 5000))
+      console.log(msg);
+      setTimeout(()=> ws.send(_.sample(answers),(x)=>x?console.log(x):''), Math.round(Math.random() * 5000))
     });
 })
 
