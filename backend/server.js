@@ -88,6 +88,14 @@ app.post('/api/pets/:id', (req, res) => {
     res.json(Math.random() > 0.6);
 })
 
+app.get('/api/pets/:id', (req, res) => {
+    let requestedPetId = req.params.id;
+    console.log(`Returning pet for petId: ${requestedPetId}`);
+    res.set('Access-Control-Allow-Origin', '*');
+    let petsWithId = pets.filter((pet) => pet.id == requestedPetId);
+    petsWithId.length > 0 ? res.json(petsWithId[0]) : res.status(404).render();
+})
+
 app.get('/api/pets', (req, res) => {
     res.set('Access-Control-Allow-Origin', '*');
     res.json(pets);

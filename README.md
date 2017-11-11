@@ -73,5 +73,17 @@ Hints:
 Hints:
 - Use the [WebSocket](http://package.elm-lang.org/packages/elm-lang/websocket/latest) module to listen for messages and to send messages.
 
-## 6. Routing between Home and Chat
-TODO
+## 6. Displaying Chat based on url
+
+- When you open the chat application with `http://localhost:8000/index.html#chat/:petid`, you should be chatting with the corresponding pet to `:petid`. So for example when you go to `http://localhost:8000/index.html#chat/1`, you should be chatting with Princess.
+- Changing the url to a different id should also update your page to the corresponding pet.
+
+Hints:
+- Have a look at [UrlParser](http://package.elm-lang.org/packages/evancz/url-parser/latest). Think about what the **only thing** is you require when opening the _Chat_ page.
+
+## 7. Routing between Home and Chat
+
+- When you click on the _Send message_ button, from the match overlay, you should be redirected to the Chat application for the Pet that you just matched with.
+
+Hints:
+- [Richard Feldman](https://twitter.com/rtfeldman) has written [a nice blog post](https://dev.to/rtfeldman/tour-of-an-open-source-elm-spa) on how he writes _real world_ applications, using the stuff he learned when writing a production Elm application for [NoRedInk](https://tech.noredink.com).
