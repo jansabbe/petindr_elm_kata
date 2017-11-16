@@ -28,11 +28,12 @@ You can start editing `src/Home.elm`. You should see the result on http://localh
 
 Hints:
 - Convert the `showtext.html` into Elm code using your plugin or using [HTML-to-Elm online](https://mbylstra.github.io/html-to-elm/). Only convert the contents of the `<body>` tag.
-- As for the initial pet data, you can copy paste something from Pets.elm
+- As for the initial pet data, you can copy paste something from `src/Pets.elm`. Do **not** use the data in server.js for this.
 
 ## 2. Like/Dislike
 
-The like and the dislike button should go to the next pet. You'll need to keep a list of nextPets in your model (see Pets.elm for data).
+The like and the dislike button should go to the next pet. You'll need to keep a list of nextPets in your model (see `src/Pets.elm` for data). Do **not** use the data in server.js for this.
+
 Everytime you click _like_ or _dislike_, the first in the list of nextPets becomes the _currentPet_. The rest of the list becomes the new _nextPets_ list.
 
 Hints:
@@ -46,7 +47,7 @@ Hints:
 
 Hints:
 - Checkout the [Http](http://package.elm-lang.org/packages/elm-lang/http/latest) module and the [Json Decode](http://package.elm-lang.org/packages/elm-lang/core/5.0.0/Json-Decode) module
-- To decode the response into an Elm data structure, you can use Json.Decode.bool 
+- To decode the response into an Elm data structure, you can use `Json.Decode.bool`
 
 ## 4. Create a separate elm application
 
