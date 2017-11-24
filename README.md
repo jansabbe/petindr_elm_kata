@@ -85,6 +85,14 @@ Hints:
 ## 7. Routing between Home and Chat
 
 - When you click on the _Send message_ button, from the match overlay, you should be redirected to the Chat application for the Pet that you just matched with.
+- When you click on the _Back_ button from the Chat page, you should go back to the Home page.
 
 Hints:
-- [Richard Feldman](https://twitter.com/rtfeldman) has written [a nice blog post](https://dev.to/rtfeldman/tour-of-an-open-source-elm-spa) on how he writes _real world_ applications, using the stuff he learned when writing a production Elm application for [NoRedInk](https://tech.noredink.com).
+- The idea is to have a new file `Main.elm` that will contain **the only** `main` program (make it a `Navigation.program`). `Main.elm`'s functions (update,view,subscriptions,model) should delegate to the relative `Home.elm` and `Chat.elm` and then get mapped accordingly (`Cmd.map`, `Html.map`).
+- First try to _convert_ Home to work with `Main.elm`.
+- Then try to _convert_ Chat to work with `Main.elm` as well.
+- `Subscriptions` is a function that gets called by the `program` at the right time (will help you think about `WebSockets` in `Chat.elm`).
+- When both Home and Chat work with Main, you can navigate to Chat from Home's match overlay.
+
+# Further reading
+[Richard Feldman](https://twitter.com/rtfeldman) has written [a nice blog post](https://dev.to/rtfeldman/tour-of-an-open-source-elm-spa) on how he writes _real world_ applications, using the stuff he learned when writing a production Elm application for [NoRedInk](https://tech.noredink.com).
